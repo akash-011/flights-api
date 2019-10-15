@@ -1,10 +1,3 @@
-from flask import Blueprint
-from flask-restplus import Resource
+from flask import Blueprint, request
 
-users = Blueprint('users', __name__)
-
-@users.route('/')
-class Hello(Resource):
-
-    def get(self):
-        return {'hello', 'world'}
+user = Blueprint('user', __name__)
